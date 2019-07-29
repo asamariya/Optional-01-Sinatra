@@ -1,0 +1,10 @@
+<h1>I'm in a <em>view</em></h1>
+<%= Time.now %>
+
+<ul>
+  <% @usernames.each do |username| %>
+    <li>
+      <%= username %>
+    </li>
+  <% end %>
+</ul>
