@@ -4,8 +4,11 @@
 
 <ul>
   <% @recipes.each_with_index do |recipe, index| %>
-    <li><%= recipe.name %>: <%= recipe.description %> - <a href="/recipes/<%= index %>">Destroy</a></li>
-    <% end %>
+  <li>
+    <%= recipe.name %>: <%= recipe.description %> -
+    <a href="/recipes/<%= index %>">Remove</a>
+  </li>
+  <% end %>
 </ul>
 
 <a href="/new">Add a recipe</a>
