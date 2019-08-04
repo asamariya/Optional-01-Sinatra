@@ -1,0 +1,20 @@
+<h1>Add a new recipe</h1>
+<form action="/recipes" method="post" id="addForm">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" name="name" />
+  </div>
+  <div>
+    <label for="name">Description</label>
+    <textarea type="text" name="description" form="addForm"></textarea>
+  </div>
+  <div>
+    <label for="name">Preparation Time</label>
+    <input type="text" name="prep_time" />
+  </div>
+  <div>
+    <label for="name">Difficulty</label>
+    <input type="text" name="difficulty" />
+  </div>
+  <input type="submit" value="Add to cookbook" />
+</form>
